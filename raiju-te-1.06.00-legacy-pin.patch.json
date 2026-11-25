@@ -1,0 +1,23 @@
+{
+  "format": "raiju-te-thumb-replacement-v1",
+  "model": "Razer Raiju Tournament Edition RZ06-02610",
+  "usb_vid_pid": "1532:1007",
+  "base_firmware": "1.06.00",
+  "official_package_name": "Raiju Tournament Edition Firmware Updater v1.06.00 R1",
+  "official_package_sha256": "5fabde1504c09f8efdda2e2a20ed3ed86ab817ca65ac4b4ffdc21fc5b550158f",
+  "base_intel_hex_sha256": "a5093fecabec5856026a21184d92375e36e291a96a8c9a4b9fd845e849192e01",
+  "base_intel_hex_line_endings": "CRLF with final CRLF",
+  "patch_start_hex": "0x18ffc",
+  "patch_length_bytes": 78,
+  "patch_template_hex": "606801300168828801910292a14b19609a8001200b4b99420cd140f200039a4208d140f201404ff0303304930023059306930793adf80c0003ab4846fff78afd0646e8e10000000000bf00bf00bf",
+  "adapter_address": {
+    "input": "PC Bluetooth radio BD_ADDR in ordinary display order",
+    "thumb_movw_offset": 26,
+    "thumb_movw_register": "r3",
+    "thumb_movw_value": "First two address octets as one big-endian 16-bit number",
+    "literal_offset": 68,
+    "literal_value": "Final four address octets in reverse order"
+  },
+  "legacy_pin": "0000",
+  "notes": "Fill both adapter fields in the template, replace only the stated address range, and recompute the affected Intel HEX record checksums. The placeholder template is not a complete firmware file."
+}
